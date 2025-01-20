@@ -1,0 +1,48 @@
+# Classes and Objects
+class Student:
+
+    # default constructor
+    def __init__(self):
+        print("This is a constructor")
+        pass
+
+    # parameterized constructor
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        print("This is a parameterized constructor")
+
+
+    def __init__(self, fullname, marks):
+        self.name = fullname
+        self.marks = marks
+        print("adding new student in Database.... ")
+
+s1 = Student("karan", 88)
+print(s1.name, s1.marks)
+
+s2 = Student("Rohan", 90)
+print(s2.name, s2.marks)
+# class Car:
+#     color = "Black"
+#     model = "BMW"
+
+# car1 = Car()
+# print(car1.color)
+# print(car1.model)
+
+class Student:
+    college_name = "IIT Bombay"
+
+    def __init__(self, name, amrks):
+        self.name = name
+        self.amrks = marks
+    
+    def welcome(self):
+        print("Welcome to the class of ", self.name)
+    
+    def get_marks(self):
+        return self.amrks
+
+s1 = Student("Karan", 88)
+s1.welcome()
